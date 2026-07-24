@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="purple">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project X • Next-Gen Arena Breakout PC Web Radar</title>
+    <meta name="description" content="Project X is the ultimate 2nd Screen Web Radar for Arena Breakout: Infinite PC. 100% Undetected Kernel Driver, Live Loot Inspector & Teammate Sharing.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Video Container with Dark Overlay -->
+    <div class="video-bg-container">
+        <video autoplay loop muted playsinline class="video-bg">
+            <source src="https://www.arenabreakoutinfinite.com/video/home-bg-s6.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <span class="brand-logo">PROJECT <span class="accent-text">X</span></span>
+                <span class="status-indicator" title="Undetected & Online">
+                    <span class="status-dot"></span> UNDETECTED
+                </span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#status" class="nav-link">Status</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="mode-toggle-btn" id="mode-toggle" title="Toggle Dark / Light Mode">
+                    <span class="mode-icon" id="mode-icon">🌙</span>
+                </button>
+                <a href="#pricing" class="btn btn-primary">Get License</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <span class="badge badge-success"><i class="dot"></i> UNDETECTED</span>
+                    <span class="badge badge-purple"><i class="icon">🛡️</i> KERNEL DRIVER</span>
+                    <span class="badge badge-cyan"><i class="icon">📡</i> 2ND SCREEN RADAR</span>
+                </div>
+                <h1 class="hero-title">
+                    DOMINATE <span class="gradient-text">ARENA BREAKOUT</span> WITH NEXT-GEN WEB RADAR
+                </h1>
+                <p class="hero-description">
+                    Project X brings real-time 2nd screen radar technology to Arena Breakout: Infinite PC. Stream tactical map telemetry straight to your browser on PC, mobile or tablet with 100% streamproof invisibility.
+                </p>
+                <div class="hero-cta">
+                    <a href="#pricing" class="btn btn-lg btn-primary shadow-glow">
+                        <span>Get Instant Access</span>
+                        <svg class="arrow-icon" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://discord.gg" target="_blank" rel="noopener" class="btn btn-lg btn-outline">
+                        <svg class="discord-icon" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                        <span>Join Community</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">Streamproof</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">0ms</span>
+                        <span class="stat-label">Overlay Delay</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">24/7</span>
+                        <span class="stat-label">Instant Delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-media-box">
+                <div class="media-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">Web_Radar.png</span>
+                        <div class="slider-controls">
+                            <span class="slider-counter" id="slider-counter">1/2</span>
+                            <button class="slider-arrow prev" id="slider-prev" title="Previous Image">&#8249;</button>
+                            <button class="slider-arrow next" id="slider-next" title="Next Image">&#8250;</button>
+                        </div>
+                    </div>
+                    <div class="window-content slider-container">
+                        <img class="slider-img active" src="assets/web_radar_ui_1.jpg" alt="Arena Breakout Web Radar Interface View 1">
+                        <img class="slider-img" src="assets/web_radar_ui_2.jpg" alt="Arena Breakout Web Radar Interface View 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-Time Anti-Cheat & Driver Status Grid -->
+    <section class="status-section" id="status">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">SYSTEM TELEMETRY</span>
+                <h2 class="section-title">REAL-TIME SYSTEM & CHEAT STATUS</h2>
+                <p class="section-subtitle">Our automated cloud monitoring system checks game patches 24/7 to guarantee safety.</p>
+            </div>
+            <div class="status-grid">
+                <div class="status-card glow-card">
+                    <div class="status-card-header">
+                        <div class="status-title-box">
+                            <h3>Arena Breakout: Infinite</h3>
+                            <span class="game-version">PC Version • Steam / Launcher</span>
+                        </div>
+                        <span class="status-pill status-online">UNDETECTED</span>
+                    </div>
+                    <div class="status-card-body">
+                        <div class="metric-row">
+                            <span>Anti-Cheat Bypass</span>
+                            <span class="metric-val text-success">ACE Protected</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Cloud Offsets</span>
+                            <span class="metric-val">Auto-Synced</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Last Game Patch Check</span>
+                            <span class="metric-val text-success" id="patch-check-time">Just Now</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card glow-card">
+                    <div class="status-card-header">
+                        <div class="status-title-box">
+                            <h3>Kernel Driver Engine</h3>
+                            <span class="game-version">Ring-0 System Architecture</span>
+                        </div>
+                        <span class="status-pill status-online">OPERATIONAL</span>
+                    </div>
+                    <div class="status-card-body">
+                        <div class="metric-row">
+                            <span>Driver Stealth</span>
+                            <span class="metric-val text-success">Low-Level Pass</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>HWID Protection</span>
+                            <span class="metric-val">Spoofer Active</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Memory Latency</span>
+                            <span class="metric-val">&lt; 1ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card glow-card">
+                    <div class="status-card-header">
+                        <div class="status-title-box">
+                            <h3>Web Radar Server Sync</h3>
+                            <span class="game-version">Multi-Device Socket Protocol</span>
+                        </div>
+                        <span class="status-pill status-online">ONLINE</span>
+                    </div>
+                    <div class="status-card-body">
+                        <div class="metric-row">
+                            <span>Browser Sync Speed</span>
+                            <span class="metric-val text-success">144 Hz Smooth</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Teammate Sharing</span>
+                            <span class="metric-val">Link Enabled</span>
+                        </div>
+                        <div class="metric-row">
+                            <span>Supported Devices</span>
+                            <span class="metric-val">PC, Mobile, Tablet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">UNMATCHED POWER</span>
+                <h2 class="section-title">THE MOST ADVANCED ARENA BREAKOUT RADAR</h2>
+                <p class="section-subtitle">Engineered specifically for extraction survival. Gain total tactical map awareness without risking your screen.</p>
+            </div>
+
+            <!-- Feature Navigation Tabs -->
+            <div class="feature-tabs">
+                <button class="tab-btn active" data-tab="radar-tab">📡 Web Radar Engine</button>
+                <button class="tab-btn" data-tab="tracker-tab">🎯 Player & Entity Tracker</button>
+                <button class="tab-btn" data-tab="loot-tab">💰 Loot & Container Radar</button>
+                <button class="tab-btn" data-tab="security-tab">🛡️ Kernel Security</button>
+            </div>
+
+            <!-- Tab 1: Web Radar Engine -->
+            <div class="tab-content active" id="radar-tab">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>2nd Screen Browser Display</h3>
+                        <p>Stream live radar map data to your second monitor, laptop, smartphone or tablet via secure browser link.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🗺️</div>
+                        <h3>Interactive Map Overlay</h3>
+                        <p>Smooth pan, zoom, map drag and rotation controls. Easily adjust radar scale according to your playstyle.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👻</div>
+                        <h3>100% Streamproof Invisibility</h3>
+                        <p>No overlay rendered on your gaming screen. Completely invisible to OBS, Discord screen share, and XSplit.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔗</div>
+                        <h3>Teammate Radar Sync</h3>
+                        <p>Share your private web radar link with squadmates in real-time so your entire team sees enemy positions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Player & Entity Tracker -->
+            <div class="tab-content" id="tracker-tab">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">👑</div>
+                        <h3>Entity Classification</h3>
+                        <p>Distinct color coding and markers for PMC Players, Scav Players, AI Guards, and rare Scav Bosses.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📐</div>
+                        <h3>Real-Time Telemetry</h3>
+                        <p>Pinpoint accuracy: exact X/Y/Z coordinates, facing direction indicator lines, and elevation height arrows.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❤️</div>
+                        <h3>Health & Team Matrix</h3>
+                        <p>Live health bars, Team ID indicators to prevent friendly fire, and active player status monitoring.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔫</div>
+                        <h3>Equipment Tracking</h3>
+                        <p>Displays active primary weapons and tactical gear equipped by nearby enemy operators.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Loot & Container Radar -->
+            <div class="tab-content" id="loot-tab">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💵</div>
+                        <h3>Custom Value Threshold Filter</h3>
+                        <p>Filter map clutter instantly. Set minimum item value thresholds (e.g. show only 50k+ currency loot).</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⭐</div>
+                        <h3>Tier Color Highlights</h3>
+                        <p>Distinct Gold, Purple, and Red tier highlights for high-value keys, secret documents, and rare loot items.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h3>High Value Hotspot Radar</h3>
+                        <p>Highlight weapon boxes, jackets, keycard spawns and high value extraction zones on your radar map.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Live Market Calculator</h3>
+                        <p>Calculates standard market value of items on map in real time, letting you plan optimal loot routes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Kernel Security -->
+            <div class="tab-content" id="security-tab">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Advanced Kernel Driver</h3>
+                        <p>Custom low-level system driver architecture engineered to perform stealth memory reads without detection.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>ACE Anti-Cheat Bypass</h3>
+                        <p>Rigorously tested and fully bypasses ACE Anti-Cheat heuristic and signature detection systems.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">☁️</div>
+                        <h3>Auto Cloud Offsets Sync</h3>
+                        <p>Zero downtime after game updates. Offsets are automatically parsed and updated via cloud server.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>HWID Spoofer Support</h3>
+                        <p>Built-in hardware protection compatibility ensuring complete disk, MAC, and motherboard peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">FLEXIBLE ACCESS</span>
+                <h2 class="section-title">SELECT YOUR LICENSE PLAN</h2>
+                <p class="section-subtitle">Instant key delivery straight to your email. Automated 24/7 license activation.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Weekly Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <span class="plan-subtitle">STANDARD ACCESS</span>
+                        <h3 class="plan-name">WEEKLY PASS</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">20</span>
+                            <span class="period">USD / 7 Days</span>
+                        </div>
+                    </div>
+                    <div class="pricing-card-body">
+                        <ul class="plan-features">
+                            <li><span class="chk">✓</span> 7 Days Full Radar Access</li>
+                            <li><span class="chk">✓</span> Interactive Web Radar Sync</li>
+                            <li><span class="chk">✓</span> 2nd Screen Browser Support</li>
+                            <li><span class="chk">✓</span> 100% Streamproof Invisibility</li>
+                            <li><span class="chk">✓</span> Instant Key Delivery 24/7</li>
+                            <li><span class="chk">✓</span> Standard Community Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <button class="btn btn-block btn-outline buy-btn" data-plan="Weekly Pass ($20 USD)">Buy Weekly Pass</button>
+                    </div>
+                </div>
+
+                <!-- Monthly VIP Plan (Featured) -->
+                <div class="pricing-card featured glow-card">
+                    <div class="featured-tag">BEST VALUE - 40% SAVINGS</div>
+                    <div class="pricing-card-header">
+                        <span class="plan-subtitle">ULTIMATE VIP PASS</span>
+                        <h3 class="plan-name">MONTHLY VIP</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">60</span>
+                            <span class="period">USD / 30 Days</span>
+                        </div>
+                    </div>
+                    <div class="pricing-card-body">
+                        <ul class="plan-features">
+                            <li><span class="chk-gold">★</span> 30 Days Full VIP Radar Access</li>
+                            <li><span class="chk-gold">★</span> Multi-Device Teammate Sharing Link</li>
+                            <li><span class="chk-gold">★</span> 2nd Screen Browser Support (Mobile/PC)</li>
+                            <li><span class="chk-gold">★</span> All Loot Filters & Custom Thresholds</li>
+                            <li><span class="chk-gold">★</span> Auto Cloud Offset Updates Included</li>
+                            <li><span class="chk-gold">★</span> VIP Priority 24/7 Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <button class="btn btn-block btn-primary shadow-glow buy-btn" data-plan="Monthly VIP Pass ($60 USD)">Get Monthly VIP Access</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">NEED HELP?</span>
+                <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+                <p class="section-subtitle">Everything you need to know about setting up and using Project X Web Radar.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does 2nd Screen Web Radar work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Project X reads game data safely using a low-level Kernel Driver on your PC and transmits the map coordinates to a secure local or web server. You open a web browser link on your smartphone, tablet, or secondary monitor to view the live radar map in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it 100% Streamproof?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Yes! Because no visual overlay or menu is drawn over your Arena Breakout game screen on your primary PC monitor, streaming software like OBS, Discord screen share, and XSplit see only a completely clean game screen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I share the radar link with my squadmates?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>With our Monthly VIP Pass, you can generate a shared teammate session link. Your squad members can open the link in their own browsers and view live enemy positions simultaneously.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens when Arena Breakout gets updated?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Our cloud server automatically parses and updates memory offsets after game patches. In most cases, you experience zero downtime without needing to redownload any software.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How quickly do I get my license key after payment?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>License keys are delivered instantly via automated system 24/7 right after purchase confirmation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>PROJECT <span class="accent-text">X</span></h2>
+                    <p>The premier 2nd screen Web Radar solution for Arena Breakout: Infinite PC.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#status">Status</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Project X. All rights reserved. Designed for elite extraction gameplay.</p>
+                <div class="footer-badges">
+                    <span class="f-badge">INSTANT DELIVERY 24/7</span>
+                    <span class="f-badge">100% UNDETECTED</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Purchase Modal -->
+    <div class="modal-overlay" id="purchase-modal">
+        <div class="modal-box glow-card">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3>PURCHASE LICENSE KEY</h3>
+                <p id="modal-plan-name">Selected Plan: Monthly VIP Pass ($60 USD)</p>
+            </div>
+            <div class="modal-body">
+                <div class="payment-options">
+                    <p class="modal-info">To complete your instant purchase, join our official Discord or Telegram server. Automated bots operate 24/7.</p>
+                    <a href="https://discord.gg" target="_blank" rel="noopener" class="btn btn-block btn-primary shadow-glow modal-btn">
+                        <span>Buy via Discord Ticket</span>
+                    </a>
+                    <a href="https://t.me" target="_blank" rel="noopener" class="btn btn-block btn-outline modal-btn">
+                        <span>Buy via Telegram Bot</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
