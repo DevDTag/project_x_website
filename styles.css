@@ -1082,6 +1082,20 @@ body {
     gap: 20px;
 }
 
+.footer-copy-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 680px;
+}
+
+.footer-disclaimer {
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    opacity: 0.65;
+}
+
 .footer-badges {
     display: flex;
     gap: 12px;
