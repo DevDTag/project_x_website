@@ -170,14 +170,15 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 12px 24px;
-    font-size: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
     font-weight: 700;
     border-radius: 12px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
+    white-space: nowrap !important;
 }
 
 .btn-primary {
@@ -407,13 +408,14 @@ body {
 }
 
 .nav-container {
-    max-width: 1280px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .nav-brand {
@@ -421,6 +423,7 @@ body {
     align-items: center;
     gap: 16px;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .brand-logo {
@@ -459,15 +462,17 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 32px;
+    gap: 22px;
+    flex-shrink: 0;
 }
 
 .nav-link {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     transition: color 0.25s;
+    white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -477,7 +482,8 @@ body {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
+    flex-shrink: 0;
 }
 
 .mode-toggle-btn {
@@ -1304,7 +1310,7 @@ body {
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
     .nav-forum-badges .forum-text {
         display: none;
     }
