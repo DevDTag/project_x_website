@@ -215,8 +215,18 @@ body {
     transition: transform 0.3s ease;
 }
 
-.btn-forum:hover .forum-svg {
-    transform: scale(1.2);
+.forum-img-logo {
+    height: 18px;
+    width: auto;
+    max-width: 75px;
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.btn-forum:hover .forum-svg,
+.btn-forum:hover .forum-img-logo {
+    transform: scale(1.15);
 }
 
 /* elitepvpers Button */
