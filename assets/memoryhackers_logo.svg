@@ -1,16 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="100%" height="100%">
-  <!-- White MemoryHackers Mask / Helmet -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="520" height="180">
   <g fill="#ffffff">
-    <!-- Main Outer Mask Body -->
     <path d="M 10 10 L 115 170 L 155 170 L 110 75 L 175 130 L 225 10 L 170 30 L 140 25 L 115 45 L 90 25 L 60 30 Z" />
-    <!-- Eye Cutouts -->
     <polygon points="75,85 105,108 105,85" fill="#090d16" />
     <polygon points="150,85 120,108 120,85" fill="#090d16" />
-    <!-- Sharp Mouth Cutout Slit -->
     <polygon points="85,142 145,130 135,150" fill="#090d16" />
   </g>
-  <!-- MEMORY HACKERS Text -->
-  <g fill="#ffffff" font-family="'Fira Code', 'Inter', 'Arial Black', sans-serif" font-weight="900">
+  <g fill="#ffffff" font-family="'Fira Code', 'Inter', sans-serif" font-weight="900">
     <text x="195" y="85" font-size="62" letter-spacing="4">MEMORY</text>
     <text x="195" y="152" font-size="52" letter-spacing="6">HACKERS</text>
   </g>
