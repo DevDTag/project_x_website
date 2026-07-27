@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4b5c" />
+      <stop offset="100%" stop-color="#d62839" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Shield -->
+  <path d="M50 8 L85 24 V50 C85 70 70 86 50 92 C30 86 15 70 15 50 V24 Z" fill="url(#cg-grad)" />
+  <!-- Inner Glow Accent -->
+  <path d="M50 14 L78 28 V50 C78 66 65 79 50 84 C35 79 22 66 22 50 V28 Z" fill="#120608" opacity="0.4" />
+  <!-- Lightning Bolt (CG Symbol) -->
+  <polygon points="54,24 32,52 48,52 44,78 70,46 53,46" fill="#ffffff" />
+</svg>
